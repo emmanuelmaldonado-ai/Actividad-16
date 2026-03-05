@@ -1,11 +1,10 @@
-﻿// la suma de los números del 1 al 10 utilizando do-while.
+﻿// tabla de multiplicar del 5 utilizando do-while.
 
-int n = 1;
-int suma = 0;
+int i = 1;
+int tabla = 5;
 do
 {
-    suma += n;
-    n++;
+    Console.WriteLine($"{i}x{tabla}={i * tabla}");
+    i++;
 }
-while(n <= 10);
-Console.WriteLine(suma);
+while(i <= 10);
