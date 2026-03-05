@@ -1,17 +1,10 @@
-﻿// números del 1 al 20 indicando si son pares o impares.
-
-int i = 1;
+﻿// cuente cuántos números hay del 1 al 50 
+int i = 01;
+int numeros = 0;
 do
 {
-    if (i % 2 == 0)
-    {
-        Console.WriteLine($"{i} Par");
-    }
-    else
-    {
-        Console.WriteLine($"{i} Impar");
-    }
+    numeros++;
     i++;
 }
-while (i <= 20);
-
+while (i <= 50);
+Console.WriteLine(numeros);
