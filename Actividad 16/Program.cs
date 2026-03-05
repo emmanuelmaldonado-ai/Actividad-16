@@ -1,9 +1,9 @@
-﻿// números pares del 2 al 20 utilizando do-while.
+﻿// números impares del 1 al 15 utilizando do-while.
 
-int n = 2;
+int n = 1;
 do
 {
     Console.WriteLine(n);
     n+=2;
 }
-while( n <= 20);
+while( n <= 15);
