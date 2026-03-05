@@ -1,8 +1,9 @@
-﻿// eros del 10 al 1 en orden descendente 
-int n = 10;
+﻿// números pares del 2 al 20 utilizando do-while.
+
+int n = 2;
 do
 {
     Console.WriteLine(n);
-    n--;
+    n+=2;
 }
-while( n >= 1);
+while( n <= 20);
