@@ -1,9 +1,8 @@
-﻿// números impares del 1 al 15 utilizando do-while.
-
+﻿// números del 1 al 10 junto con su cuadrado.
 int n = 1;
 do
 {
-    Console.WriteLine(n);
-    n+=2;
+    Console.WriteLine($"{n} su cuadrado es {n*n}");
+    n++;
 }
-while( n <= 15);
+while(n <= 10);
