@@ -1,10 +1,13 @@
-﻿// cuente cuántos números hay del 1 al 50 
-int i = 01;
-int numeros = 0;
+﻿// pida al usuario 5 números y calcule la suma total 
+
+int i = 1;
+int suma = 0;
 do
 {
-    numeros++;
+    Console.WriteLine("Ingrese un número");
+    int numero = int.Parse(Console.ReadLine());
+    suma = suma + numero;
     i++;
 }
-while (i <= 50);
-Console.WriteLine(numeros);
+while (i <= 5);
+Console.WriteLine($"Suma total: {suma}");
