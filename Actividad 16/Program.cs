@@ -1,4 +1,4 @@
-﻿//números del 1 al 5 utilizando do-while.
+﻿//ros del 1 al 10 utilizando do-while.
 
 int n = 1;
 do
@@ -6,4 +6,4 @@ do
     Console.WriteLine(n);
     n++;
 }
-while( n <= 5);
+while( n <= 10);
