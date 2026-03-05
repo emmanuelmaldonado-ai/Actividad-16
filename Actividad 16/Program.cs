@@ -1,10 +1,16 @@
-﻿// tabla de multiplicar del 5 utilizando do-while.
+﻿// números del 1 al 20 indicando si son pares o impares.
 
 int i = 1;
-int tabla = 5;
 do
 {
-    Console.WriteLine($"{i}x{tabla}={i * tabla}");
+    if (i % 2 == 0)
+    {
+        Console.WriteLine($"{i} Par");
+    }
+    else
+    {
+        Console.WriteLine($"{i} Impar");
+    }
     i++;
 }
-while(i <= 10);
+while (i <= 20);
