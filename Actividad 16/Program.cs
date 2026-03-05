@@ -1,8 +1,11 @@
-﻿// números del 1 al 10 junto con su cuadrado.
+﻿// la suma de los números del 1 al 10 utilizando do-while.
+
 int n = 1;
+int suma = 0;
 do
 {
-    Console.WriteLine($"{n} su cuadrado es {n*n}");
+    suma += n;
     n++;
 }
 while(n <= 10);
+Console.WriteLine(suma);
