@@ -1,15 +1,28 @@
-﻿// ingresar numeros y contar cuantos son pares hasta ingresar 0
+﻿// menú que se repita hasta que el usuario elija la opcion de salir
 
-int numero;
-int par = 0;
+int opcion;
 do
 {
-    Console.WriteLine("Ingresa un numero (0 para salir)");
-    numero = int.Parse(Console.ReadLine());
-    if (numero % 2 == 0 && numero != 0)
+    Console.WriteLine("Menú");
+    Console.WriteLine("Opciones: 1) saludo; 2) número aleatorio; 0) salir");
+    opcion = int.Parse(Console.ReadLine());
+    Console.WriteLine();
+
+    switch (opcion)
     {
-        par++;
+        case 1:
+            Console.WriteLine("Hola, es un gusto saludarte de nuevo");
+            break;
+        case 2:
+            Console.WriteLine("Número aleatorio: 888");
+            break;
+        case 0:
+            Console.WriteLine("Saliendo...");
+            break;
+        deafult:
+            Console.WriteLine("opcion no valida");
+            break;
     }
+    Console.WriteLine();
 }
-while (numero != 0);
-Console.WriteLine($"Números pares: {par}");
+while (opcion != 0);
