@@ -1,6 +1,6 @@
-﻿// de¿¿pedir numeros y sumarlos hasta que el usuario escriba 0
+﻿// cuente cuantos numero ingreso el usuario hasta ingresar 0
 
-int suma = 0;
+int cuenta = 0;
 int numero;
 do
 {
@@ -8,8 +8,8 @@ do
     numero = int.Parse(Console.ReadLine());
     if (numero != 0)
     {
-        suma += numero;
+        cuenta++;
     }
 }
 while (numero != 0);
-Console.WriteLine($"La suma total es: {suma}");
+Console.WriteLine($"Fueron {cuenta} números ingresados");
