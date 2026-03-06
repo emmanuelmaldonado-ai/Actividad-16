@@ -1,11 +1,15 @@
-﻿// pide una contraseña al usuario y continue solicitandola hasta que sea correcta 
+﻿// ingresar numeros y contar cuantos son pares hasta ingresar 0
 
-string contraseña = "123456";
-string intento;
+int numero;
+int par = 0;
 do
 {
-    Console.WriteLine("Ingresar contraseña");
-    intento =Console.ReadLine();
+    Console.WriteLine("Ingresa un numero (0 para salir)");
+    numero = int.Parse(Console.ReadLine());
+    if (numero % 2 == 0 && numero != 0)
+    {
+        par++;
+    }
 }
-while (intento != contraseña );
-Console.WriteLine("Bienvenido");
+while (numero != 0);
+Console.WriteLine($"Números pares: {par}");
