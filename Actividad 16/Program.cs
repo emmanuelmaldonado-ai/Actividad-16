@@ -1,10 +1,11 @@
-﻿// pida números al usuario hasta ingresar 0 y determine cual fue el nuero mayor 
+﻿// pide una contraseña al usuario y continue solicitandola hasta que sea correcta 
 
-int numero;
+string contraseña = "123456";
+string intento;
 do
 {
-    Console.WriteLine("Ingrese un número positivo");
-    numero = int.Parse(Console.ReadLine());
+    Console.WriteLine("Ingresar contraseña");
+    intento =Console.ReadLine();
 }
-while (numero <= 0);
-Console.WriteLine($"Número aceptado {numero}");
+while (intento != contraseña );
+Console.WriteLine("Bienvenido");
