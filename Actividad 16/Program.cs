@@ -1,28 +1,11 @@
-﻿// menú que se repita hasta que el usuario elija la opcion de salir
+﻿// pide un numero al usuario y mostrar su tabla de multiplicar del 1 al 10
 
-int opcion;
+Console.WriteLine("Ingrese un númro");
+int numero = int.Parse(Console.ReadLine());
+int i = 1;
 do
 {
-    Console.WriteLine("Menú");
-    Console.WriteLine("Opciones: 1) saludo; 2) número aleatorio; 0) salir");
-    opcion = int.Parse(Console.ReadLine());
-    Console.WriteLine();
-
-    switch (opcion)
-    {
-        case 1:
-            Console.WriteLine("Hola, es un gusto saludarte de nuevo");
-            break;
-        case 2:
-            Console.WriteLine("Número aleatorio: 888");
-            break;
-        case 0:
-            Console.WriteLine("Saliendo...");
-            break;
-        deafult:
-            Console.WriteLine("opcion no valida");
-            break;
-    }
-    Console.WriteLine();
+    Console.WriteLine($"{numero} x {i} = {numero * i}");
+    i++;
 }
-while (opcion != 0);
+while (i <= 10);
