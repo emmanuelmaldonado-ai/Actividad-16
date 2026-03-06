@@ -1,15 +1,15 @@
-﻿// cuente cuantos numero ingreso el usuario hasta ingresar 0
+﻿// pida números al usuario hasta ingresar 0 y determine cual fue el nuero mayor 
 
-int cuenta = 0;
 int numero;
+int mayor = 0;
 do
 {
     Console.WriteLine("Ingrese un número (0 para salir)");
     numero = int.Parse(Console.ReadLine());
-    if (numero != 0)
+    if (numero > mayor && numero != 0)
     {
-        cuenta++;
+    mayor = numero;
     }
 }
 while (numero != 0);
-Console.WriteLine($"Fueron {cuenta} números ingresados");
+Console.WriteLine($"Número mayor {mayor}");
