@@ -1,13 +1,15 @@
-﻿// pida al usuario 5 números y calcule la suma total 
+﻿// de¿¿pedir numeros y sumarlos hasta que el usuario escriba 0
 
-int i = 1;
 int suma = 0;
+int numero;
 do
 {
-    Console.WriteLine("Ingrese un número");
-    int numero = int.Parse(Console.ReadLine());
-    suma = suma + numero;
-    i++;
+    Console.WriteLine("Ingrese un número (0 para salir)");
+    numero = int.Parse(Console.ReadLine());
+    if (numero != 0)
+    {
+        suma += numero;
+    }
 }
-while (i <= 5);
-Console.WriteLine($"Suma total: {suma}");
+while (numero != 0);
+Console.WriteLine($"La suma total es: {suma}");
